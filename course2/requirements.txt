@@ -1,0 +1,12 @@
+autopep8==2.3.2
+joblib==1.5.0
+matplotlib==3.10.1
+notebook==7.4.1
+numpy==2.2.5
+pandas==2.2.3
+pylint==3.3.6
+scikit-learn==1.6.1
+scipy==1.15.2
+seaborn==0.13.2
+shap==0.47.2
+threadpoolctl==3.6.0
