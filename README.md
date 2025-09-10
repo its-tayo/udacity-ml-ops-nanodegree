@@ -3,7 +3,7 @@
 Required links:
 
 - Weights and Biases: [https://wandb.ai/tayo/nyc_airbnb](https://wandb.ai/tayo/nyc_airbnb)
-- GitHub: [https://github.com/its-tayo/udacity-ml-ops-nanodegree/tree/build-ml-pipeline-for-short-term-rental-prices](https://github.com/its-tayo/udacity-ml-ops-nanodegree/tree/build-ml-pipeline-for-short-term-rental-prices)
+- GitHub: [https://github.com/its-tayo/udacity-ml-ops-nanodegree](https://github.com/its-tayo/udacity-ml-ops-nanodegree)
 
 You are working for a property management company renting rooms and properties for short periods of
 time on various rental platforms. You need to estimate the typical price for a given property based
