@@ -1,4 +1,7 @@
+import os
 import pickle
+import subprocess
+from pathlib import Path
 
 import pandas as pd
 from fastapi import FastAPI
@@ -9,17 +12,66 @@ from utils.model import inference
 
 app = FastAPI()
 
-model_filename = "model/model.pkl"
-encoder_filename = "model/encoder.pkl"
-lb_filename = "model/label_binarizer.pkl"
+HERE = Path(__file__).resolve().parent
+REPO_ROOT = HERE.parent
+MODEL_DIR = HERE / "model"
+MODEL_PATH = MODEL_DIR / "model.pkl"
+ENCODER_PATH = MODEL_DIR / "encoder.pkl"
+LB_PATH = MODEL_DIR / "label_binarizer.pkl"
 
-with open(model_filename, "rb") as model_file:
+
+def _ensure_artifacts():
+    missing = [
+        p for p in (MODEL_PATH, ENCODER_PATH, LB_PATH)
+        if not p.exists()
+    ]
+    if not missing:
+        return
+
+    # Only auto-pull if allowed. Set DVC_AUTO_PULL=0 to disable.
+    if os.getenv("DVC_AUTO_PULL", "1") != "1":
+        raise FileNotFoundError(
+            f"Missing artifacts: {', '.join(map(str, missing))}. "
+            "Run `dvc pull -R course4/model` or set DVC_AUTO_PULL=1."
+        )
+
+    # Try pulling everything under course4/model from the repo root.
+    try:
+        subprocess.run(
+            ["dvc", "pull", "-R", "course4/model"],
+            check=True,
+            cwd=REPO_ROOT
+        )
+    except FileNotFoundError:
+        raise RuntimeError(
+            "DVC is not installed. Install `dvc[s3]` or disable auto-pull"
+            "with DVC_AUTO_PULL=0."
+        )
+    except subprocess.CalledProcessError as e:
+        raise RuntimeError(f"`dvc pull` failed: {e}")
+
+    # Verify again
+    still_missing = [
+        p for p in (MODEL_PATH, ENCODER_PATH, LB_PATH)
+        if not p.exists()
+    ]
+    if still_missing:
+        raise FileNotFoundError(
+            f"Artifacts still missing after `dvc pull`: "
+            f"{', '.join(map(str, still_missing))}"
+        )
+
+
+_ensure_artifacts()
+
+
+with open(MODEL_PATH, "rb") as model_file:
     model = pickle.load(model_file)
 
-with open(encoder_filename, "rb") as encoder_file:
+with open(ENCODER_PATH, "rb") as encoder_file:
     encoder = pickle.load(encoder_file)
 
-with open(lb_filename, "rb") as lb_file:
+with open(LB_PATH, "rb") as lb_file:
     lb = pickle.load(lb_file)
 
 categorical_features = [
