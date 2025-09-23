@@ -15,11 +15,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    env:
-      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,15 +28,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install "dvc[s3]" 
           if [ -f course4/requirements.txt ]; then pip install -r course4/requirements.txt; fi
-
-      - name: Pull DVC data for course4
-        run: |
-          dvc pull \
-            course4/model/encoder.pkl.dvc \
-            course4/model/label_binarizer.pkl.dvc \
-            course4/model/model.pkl.dvc
 
       - name: Lint with flake8
         run: |
