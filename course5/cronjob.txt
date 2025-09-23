@@ -1,0 +1,1 @@
+*/10 * * * * cd "/Users/akindolieoluwatayo/Desktop/work/learning/udacity-ml-ops-nanodegree/course5" && "/Users/akindolieoluwatayo/Desktop/work/learning/udacity-ml-ops-nanodegree/course5/venv/bin/python" fullprocess.py
