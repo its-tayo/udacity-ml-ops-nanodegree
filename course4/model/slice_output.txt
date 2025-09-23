@@ -1,0 +1,505 @@
+Feature: workclass, Value: ?
+Precision: 0.70
+Recall: 0.42
+F1: 0.53
+--------------------
+Feature: workclass, Value: Federal-gov
+Precision: 0.76
+Recall: 0.69
+F1: 0.72
+--------------------
+Feature: workclass, Value: Local-gov
+Precision: 0.75
+Recall: 0.72
+F1: 0.74
+--------------------
+Feature: workclass, Value: Never-worked
+Precision: 1.00
+Recall: 1.00
+F1: 1.00
+--------------------
+Feature: workclass, Value: Private
+Precision: 0.74
+Recall: 0.63
+F1: 0.68
+--------------------
+Feature: workclass, Value: Self-emp-inc
+Precision: 0.76
+Recall: 0.72
+F1: 0.74
+--------------------
+Feature: workclass, Value: Self-emp-not-inc
+Precision: 0.77
+Recall: 0.54
+F1: 0.63
+--------------------
+Feature: workclass, Value: State-gov
+Precision: 0.70
+Recall: 0.69
+F1: 0.69
+--------------------
+Feature: workclass, Value: Without-pay
+Precision: 1.00
+Recall: 1.00
+F1: 1.00
+--------------------
+Feature: education, Value: 10th
+Precision: 0.86
+Recall: 0.55
+F1: 0.67
+--------------------
+Feature: education, Value: 11th
+Precision: 0.75
+Recall: 0.23
+F1: 0.35
+--------------------
+Feature: education, Value: 12th
+Precision: 1.00
+Recall: 0.40
+F1: 0.57
+--------------------
+Feature: education, Value: 1st-4th
+Precision: 1.00
+Recall: 0.00
+F1: 0.00
+--------------------
+Feature: education, Value: 5th-6th
+Precision: 1.00
+Recall: 0.33
+F1: 0.50
+--------------------
+Feature: education, Value: 7th-8th
+Precision: 1.00
+Recall: 0.33
+F1: 0.50
+--------------------
+Feature: education, Value: 9th
+Precision: 1.00
+Recall: 0.00
+F1: 0.00
+--------------------
+Feature: education, Value: Assoc-acdm
+Precision: 0.73
+Recall: 0.65
+F1: 0.69
+--------------------
+Feature: education, Value: Assoc-voc
+Precision: 0.70
+Recall: 0.50
+F1: 0.58
+--------------------
+Feature: education, Value: Bachelors
+Precision: 0.75
+Recall: 0.79
+F1: 0.77
+--------------------
+Feature: education, Value: Doctorate
+Precision: 0.84
+Recall: 0.88
+F1: 0.86
+--------------------
+Feature: education, Value: HS-grad
+Precision: 0.61
+Recall: 0.37
+F1: 0.46
+--------------------
+Feature: education, Value: Masters
+Precision: 0.78
+Recall: 0.86
+F1: 0.82
+--------------------
+Feature: education, Value: Preschool
+Precision: 1.00
+Recall: 1.00
+F1: 1.00
+--------------------
+Feature: education, Value: Prof-school
+Precision: 0.87
+Recall: 0.86
+F1: 0.87
+--------------------
+Feature: education, Value: Some-college
+Precision: 0.74
+Recall: 0.54
+F1: 0.62
+--------------------
+Feature: marital-status, Value: Divorced
+Precision: 0.74
+Recall: 0.34
+F1: 0.47
+--------------------
+Feature: marital-status, Value: Married-AF-spouse
+Precision: 1.00
+Recall: 0.00
+F1: 0.00
+--------------------
+Feature: marital-status, Value: Married-civ-spouse
+Precision: 0.74
+Recall: 0.67
+F1: 0.70
+--------------------
+Feature: marital-status, Value: Married-spouse-absent
+Precision: 1.00
+Recall: 0.33
+F1: 0.50
+--------------------
+Feature: marital-status, Value: Never-married
+Precision: 0.81
+Recall: 0.50
+F1: 0.62
+--------------------
+Feature: marital-status, Value: Separated
+Precision: 0.75
+Recall: 0.30
+F1: 0.43
+--------------------
+Feature: marital-status, Value: Widowed
+Precision: 1.00
+Recall: 0.24
+F1: 0.38
+--------------------
+Feature: occupation, Value: ?
+Precision: 0.70
+Recall: 0.42
+F1: 0.53
+--------------------
+Feature: occupation, Value: Adm-clerical
+Precision: 0.67
+Recall: 0.48
+F1: 0.56
+--------------------
+Feature: occupation, Value: Armed-Forces
+Precision: 1.00
+Recall: 1.00
+F1: 1.00
+--------------------
+Feature: occupation, Value: Craft-repair
+Precision: 0.64
+Recall: 0.42
+F1: 0.51
+--------------------
+Feature: occupation, Value: Exec-managerial
+Precision: 0.84
+Recall: 0.78
+F1: 0.81
+--------------------
+Feature: occupation, Value: Farming-fishing
+Precision: 0.68
+Recall: 0.56
+F1: 0.61
+--------------------
+Feature: occupation, Value: Handlers-cleaners
+Precision: 0.80
+Recall: 0.22
+F1: 0.35
+--------------------
+Feature: occupation, Value: Machine-op-inspct
+Precision: 0.62
+Recall: 0.38
+F1: 0.47
+--------------------
+Feature: occupation, Value: Other-service
+Precision: 0.80
+Recall: 0.16
+F1: 0.27
+--------------------
+Feature: occupation, Value: Priv-house-serv
+Precision: 1.00
+Recall: 1.00
+F1: 1.00
+--------------------
+Feature: occupation, Value: Prof-specialty
+Precision: 0.77
+Recall: 0.80
+F1: 0.78
+--------------------
+Feature: occupation, Value: Protective-serv
+Precision: 0.65
+Recall: 0.55
+F1: 0.59
+--------------------
+Feature: occupation, Value: Sales
+Precision: 0.64
+Recall: 0.59
+F1: 0.62
+--------------------
+Feature: occupation, Value: Tech-support
+Precision: 0.71
+Recall: 0.57
+F1: 0.63
+--------------------
+Feature: occupation, Value: Transport-moving
+Precision: 0.63
+Recall: 0.41
+F1: 0.49
+--------------------
+Feature: relationship, Value: Husband
+Precision: 0.73
+Recall: 0.67
+F1: 0.70
+--------------------
+Feature: relationship, Value: Not-in-family
+Precision: 0.80
+Recall: 0.43
+F1: 0.55
+--------------------
+Feature: relationship, Value: Other-relative
+Precision: 1.00
+Recall: 0.22
+F1: 0.36
+--------------------
+Feature: relationship, Value: Own-child
+Precision: 0.83
+Recall: 0.38
+F1: 0.53
+--------------------
+Feature: relationship, Value: Unmarried
+Precision: 0.78
+Recall: 0.33
+F1: 0.47
+--------------------
+Feature: relationship, Value: Wife
+Precision: 0.75
+Recall: 0.72
+F1: 0.74
+--------------------
+Feature: race, Value: Amer-Indian-Eskimo
+Precision: 0.83
+Recall: 0.62
+F1: 0.71
+--------------------
+Feature: race, Value: Asian-Pac-Islander
+Precision: 0.70
+Recall: 0.60
+F1: 0.65
+--------------------
+Feature: race, Value: Black
+Precision: 0.86
+Recall: 0.52
+F1: 0.65
+--------------------
+Feature: race, Value: Other
+Precision: 0.71
+Recall: 0.83
+F1: 0.77
+--------------------
+Feature: race, Value: White
+Precision: 0.74
+Recall: 0.64
+F1: 0.69
+--------------------
+Feature: sex, Value: Female
+Precision: 0.75
+Recall: 0.59
+F1: 0.67
+--------------------
+Feature: sex, Value: Male
+Precision: 0.74
+Recall: 0.64
+F1: 0.69
+--------------------
+Feature: native-country, Value: ?
+Precision: 0.86
+Recall: 0.56
+F1: 0.68
+--------------------
+Feature: native-country, Value: Cambodia
+Precision: 0.50
+Recall: 0.50
+F1: 0.50
+--------------------
+Feature: native-country, Value: Canada
+Precision: 1.00
+Recall: 0.43
+F1: 0.60
+--------------------
+Feature: native-country, Value: China
+Precision: 1.00
+Recall: 1.00
+F1: 1.00
+--------------------
+Feature: native-country, Value: Columbia
+Precision: 0.00
+Recall: 1.00
+F1: 0.00
+--------------------
+Feature: native-country, Value: Cuba
+Precision: 0.67
+Recall: 0.67
+F1: 0.67
+--------------------
+Feature: native-country, Value: Dominican-Republic
+Precision: 1.00
+Recall: 1.00
+F1: 1.00
+--------------------
+Feature: native-country, Value: Ecuador
+Precision: 1.00
+Recall: 1.00
+F1: 1.00
+--------------------
+Feature: native-country, Value: El-Salvador
+Precision: 1.00
+Recall: 1.00
+F1: 1.00
+--------------------
+Feature: native-country, Value: England
+Precision: 0.75
+Recall: 0.60
+F1: 0.67
+--------------------
+Feature: native-country, Value: France
+Precision: 1.00
+Recall: 0.50
+F1: 0.67
+--------------------
+Feature: native-country, Value: Germany
+Precision: 0.75
+Recall: 0.50
+F1: 0.60
+--------------------
+Feature: native-country, Value: Greece
+Precision: 1.00
+Recall: 0.33
+F1: 0.50
+--------------------
+Feature: native-country, Value: Guatemala
+Precision: 1.00
+Recall: 1.00
+F1: 1.00
+--------------------
+Feature: native-country, Value: Haiti
+Precision: 1.00
+Recall: 0.00
+F1: 0.00
+--------------------
+Feature: native-country, Value: Honduras
+Precision: 1.00
+Recall: 1.00
+F1: 1.00
+--------------------
+Feature: native-country, Value: Hong
+Precision: 1.00
+Recall: 1.00
+F1: 1.00
+--------------------
+Feature: native-country, Value: Hungary
+Precision: 0.00
+Recall: 1.00
+F1: 0.00
+--------------------
+Feature: native-country, Value: India
+Precision: 0.62
+Recall: 0.73
+F1: 0.67
+--------------------
+Feature: native-country, Value: Iran
+Precision: 0.50
+Recall: 0.50
+F1: 0.50
+--------------------
+Feature: native-country, Value: Ireland
+Precision: 1.00
+Recall: 1.00
+F1: 1.00
+--------------------
+Feature: native-country, Value: Italy
+Precision: 1.00
+Recall: 0.50
+F1: 0.67
+--------------------
+Feature: native-country, Value: Jamaica
+Precision: 0.50
+Recall: 0.50
+F1: 0.50
+--------------------
+Feature: native-country, Value: Japan
+Precision: 1.00
+Recall: 0.88
+F1: 0.93
+--------------------
+Feature: native-country, Value: Laos
+Precision: 1.00
+Recall: 1.00
+F1: 1.00
+--------------------
+Feature: native-country, Value: Mexico
+Precision: 0.80
+Recall: 0.36
+F1: 0.50
+--------------------
+Feature: native-country, Value: Nicaragua
+Precision: 1.00
+Recall: 0.50
+F1: 0.67
+--------------------
+Feature: native-country, Value: Outlying-US(Guam-USVI-etc)
+Precision: 1.00
+Recall: 1.00
+F1: 1.00
+--------------------
+Feature: native-country, Value: Peru
+Precision: 1.00
+Recall: 1.00
+F1: 1.00
+--------------------
+Feature: native-country, Value: Philippines
+Precision: 0.70
+Recall: 0.64
+F1: 0.67
+--------------------
+Feature: native-country, Value: Poland
+Precision: 0.50
+Recall: 0.33
+F1: 0.40
+--------------------
+Feature: native-country, Value: Portugal
+Precision: 1.00
+Recall: 0.00
+F1: 0.00
+--------------------
+Feature: native-country, Value: Puerto-Rico
+Precision: 1.00
+Recall: 1.00
+F1: 1.00
+--------------------
+Feature: native-country, Value: Scotland
+Precision: 1.00
+Recall: 1.00
+F1: 1.00
+--------------------
+Feature: native-country, Value: South
+Precision: 0.75
+Recall: 0.50
+F1: 0.60
+--------------------
+Feature: native-country, Value: Taiwan
+Precision: 0.75
+Recall: 1.00
+F1: 0.86
+--------------------
+Feature: native-country, Value: Thailand
+Precision: 1.00
+Recall: 1.00
+F1: 1.00
+--------------------
+Feature: native-country, Value: Trinadad&Tobago
+Precision: 1.00
+Recall: 0.00
+F1: 0.00
+--------------------
+Feature: native-country, Value: United-States
+Precision: 0.74
+Recall: 0.64
+F1: 0.69
+--------------------
+Feature: native-country, Value: Vietnam
+Precision: 0.00
+Recall: 0.00
+F1: 1.00
+--------------------
+Feature: native-country, Value: Yugoslavia
+Precision: 0.50
+Recall: 1.00
+F1: 0.67
+--------------------
