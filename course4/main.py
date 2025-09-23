@@ -1,4 +1,5 @@
 import pickle
+from pathlib import Path
 
 import pandas as pd
 from fastapi import FastAPI
@@ -9,9 +10,11 @@ from utils.model import inference
 
 app = FastAPI()
 
-model_filename = "model/model.pkl"
-encoder_filename = "model/encoder.pkl"
-lb_filename = "model/label_binarizer.pkl"
+BASE_DIR = Path(__file__).resolve().parent
+
+model_filename = BASE_DIR / "model" / "model.pkl"
+encoder_filename = BASE_DIR / "model" / "encoder.pkl"
+lb_filename = BASE_DIR / "model" / "label_binarizer.pkl"
 
 with open(model_filename, "rb") as model_file:
     model = pickle.load(model_file)

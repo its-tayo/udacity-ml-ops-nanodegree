@@ -1,4 +1,5 @@
 import pickle
+from pathlib import Path
 
 import pytest
 import pandas as pd
@@ -7,10 +8,12 @@ from sklearn.model_selection import train_test_split
 from utils.data import process_data
 from utils.model import train_model, compute_model_metrics, inference
 
+BASE_DIR = Path(__file__).resolve().parent
+
 
 @pytest.fixture
 def df():
-    return pd.read_csv("data/census.csv")
+    return pd.read_csv(BASE_DIR / "data" / "census.csv")
 
 
 @pytest.fixture
@@ -26,7 +29,7 @@ def train_data(df):
 
 @pytest.fixture
 def model():
-    with open("model/model.pkl", "rb") as f:
+    with open(BASE_DIR / "model" / "model.pkl", "rb") as f:
         model = pickle.load(f)
     return model
 
